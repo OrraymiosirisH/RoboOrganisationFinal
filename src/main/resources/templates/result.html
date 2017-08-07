@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Person you just added</title>
+</head>
+<body>
+<h1>Showing the person you just added.</h1>
+<p th:text="'Organisation: ' + ${newRobo.roboOrgan}" />
+<p th:text="'Name: ' + ${newRobo.roboName}" />
+<p th:text="'Email: ' + ${newRobo.roboEmail}" />
+<p th:text="'Diff: ' + ${newRobo.diffdays}" />
+
+
+
+<!--<p th:text="'Start Date: ' + ${newRobo.roboStart}" />
+<p th:text="'Ended-Date: ' + ${newRobo.roboEnd}" />-->
+
+<p><a href="/addnew">Add another person</a></p>
+<p><a href = "/">Go back to the main menu.</a></p>
+
+</body>
+</html>
