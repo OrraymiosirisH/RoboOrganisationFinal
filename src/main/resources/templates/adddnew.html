@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Add a New Entry</title>
+</head>
+<body>
+<h1>Add the details of the person:</h1>
+<p>Please insert the correct Values..</p>
+
+<h1>Robo Resume</h1>
+<form action = "#" th:action="@{/addnew}" th:object="${newEntry}" method = "post">
+
+    <p>Organization Name: <input type = "text" th:field="*{roboOrgan}" /></p>
+
+    <p>Name: <input type = "text" th:field="*{roboName}" /></p>
+
+    <p>Email: <input type = "text" th:field="*{roboEmail}" /></p>
+
+    <p>Started Date: <input type = "text" th:field="*{date1}" /></p>
+
+    <p>Ended Date: <input type = "text" th:field="*{date2}" /></p>
+
+    <p>Recomended Pattern [mm/dd/yyyy]..</p>
+
+
+
+    <p><input type = "submit" value = "Add"/> <input type="reset" value="Clear Form" /></p>
+
+    <p> <a href = "/">Go to Back to main menu!.</a></p>
+
+</form>
+</body>
+</html>

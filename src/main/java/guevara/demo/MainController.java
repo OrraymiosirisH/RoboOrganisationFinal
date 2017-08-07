@@ -35,6 +35,8 @@ public class MainController {
     public String addABook(Model model){
         model.addAttribute("newEntry", new RoboResume());
         return "adddnew";
+
+
     }
 
 
